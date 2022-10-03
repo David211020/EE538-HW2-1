@@ -28,3 +28,16 @@ Please clone this repository, edit README.md to answer the questions, and fill u
 
 
 See [cpp-template](https://github.com/ourarash/cpp-template) for help on installing bazel and debugging.
+
+
+Question 1: Why did we have to provide size_1, size_2 as an input?
+Array_1 and array_2 are dynamic arrays. If we do not provide size_1 and size_2, we cannot know the size of array_1 and array_2 and cannot concatenate them together.
+
+Question 2: How can we know the size of the output?
+The size of the output equals to size_1 + size_2. Or we can change the type of function to int and add the array pointer of the output concatenated array to the function input value, so that the return value can be set as size of concatenated array.
+
+Question 1: Why didn't we provide the sizes?
+We can get the size of vectors.
+
+Question 2: We have two functions with the name of Concatenate. Is this ok?
+Yes, it is ok. Function overloading is available in C++. If functions is differ by the arity or types of their parameters, it is ok.# EE538-HW2-1
